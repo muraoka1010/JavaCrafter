@@ -1,0 +1,10 @@
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 39332093
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd java_practice && javac Main.java && java Main"
