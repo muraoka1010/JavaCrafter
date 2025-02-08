@@ -1,3 +1,4 @@
+
 run = "cd java_practice && javac Main.java && java Main"
 modules = ["java-17:v2-20240117-0a73cd7"]
 
