@@ -1,5 +1,10 @@
-run = "cd java_practice && javac Main.java && java Main"
-modules = ["java-17:v2-20240117-0a73cd7"]
+[workflows]
+runButton = "Run"
 
-[nix]
-channel = "stable-23_11"
+[[workflows.workflow]]
+name = "Run"
+author = 39332093
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd java_practice && javac Main.java && java Main"
